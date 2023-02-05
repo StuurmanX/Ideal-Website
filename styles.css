@@ -98,6 +98,16 @@ form input[type="submit"] {
   }
 }
 
+@media (max-width: 700px) {
+  main {
+    display: block;
+  }
+  
+  section {
+    margin: 0;
+  }
+}
+
 .social-media-links:hover {
   color: #0056b3;
 }
