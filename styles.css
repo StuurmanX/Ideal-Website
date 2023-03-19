@@ -1,69 +1,109 @@
+/* Body styles */
 body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
 }
 
+/* Header styles */
 header {
   background-color: #333;
-  color: white;
-  padding: 1em;
+  color: #fff;
   text-align: center;
+  padding: 20px;
 }
 
 header h1 {
   margin: 0;
+  font-size: 3em;
+  letter-spacing: 2px;
 }
 
+/* Main styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Section styles */
 section {
-  padding: 1em;
+  margin: 40px 0;
 }
 
-section#about {
-  background-color: #f2f2f2;
+section h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-section#education {
-  background-color: #e6e6e6;
+section ul, section ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-section#projects {
-  background-color: #f2f2f2;
+section li {
+  margin-bottom: 10px;
 }
 
-section#contact {
-  background-color: #e6e6e6;
+section a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
-form label,
-form input[type="submit"],
-form textarea {
+section a:hover {
+  background-color: #555;
+}
+
+/* Form styles */
+form {
+  margin-top: 20px;
+}
+
+form label {
   display: block;
-  margin-bottom: 1em;
-  width: 100%;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
 }
 
-form input[type="text"],
-form input[type="email"],
-form textarea {
-  padding: 0.5em;
-  font-size: 1em;
+form input[type="text"], form input[type="email"], form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #333;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  font-size: 1em;
 }
 
 form input[type="submit"] {
   background-color: #333;
-  color: white;
-  padding: 0.5em 1em;
+  color: #fff;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
-#social a {
-  color: #333;
-  margin-right: 1em;
+form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Blog styles */
+#blog {
+  margin-top: 20px;
 }
 
 #blog ul {
@@ -72,42 +112,57 @@ form input[type="submit"] {
   padding: 0;
 }
 
+#blog li {
+  margin-bottom: 20px;
+}
+
 #blog h3 {
-  margin: 0;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: #333;
 }
 
 #blog p {
+  margin-bottom: 5px;
   font-size: 0.8em;
-  color: #666;
+}
+
+#blog a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#blog a:hover {
+  text-decoration: underline;
+}
+
+/* Social links styles */
+#social {
+  list-style: none;
   margin: 0;
+  padding: 0;
 }
 
-@media (min-width: 700px) {
-  main {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  section {
-    flex: 1;
-    margin: 1em;
-  }
-  
-  section#contact {
-    order: 2;
-  }
+#social li {
+  display: inline-block;
+  margin-right: 10px;
 }
 
-@media (max-width: 700px) {
-  main {
-    display: block;
-  }
-  
-  section {
-    margin: 0;
-  }
+#social li:last-child {
+  margin-right: 0;
 }
 
-.social-media-links:hover {
-  color: #0056b3;
+#social a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("social-icons.png");
+  background-repeat: no-repeat;
+  background-size: 150%;
 }
+
+#social a[href*="facebook.com"] {
+  background-position: 0 0;
+}
+
